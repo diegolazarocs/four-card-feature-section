@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(248, 248, 248);
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  width: 50px;
+}
+header {
+  text-align: center;
+  max-width: 25rem;
+  margin: 0 auto;
+  margin: 2rem auto;
+}
+header h2 {
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+header h2 span {
+  font-weight: 600;
+}
+header h3 {
+  font-size: 0.7rem;
+  font-weight: 200;
+  color: gray;
+}
+
+.cards {
+  margin: 0 auto;
+  max-width: 55rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+.card {
+  position: relative;
+  max-width: 12rem;
+  min-height: 10rem;
+  background-color: var(--white);
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+  border-radius: 8px;
+}
+.card h4 {
+  font-size: 0.9rem;
+  color: gray;
+}
+.card p {
+  margin: 1rem 0;
+  font-size: 0.6rem;
+  color: gray;
+}
+.card img {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+.builder {
+  border-top: 4px solid var(--Red);
+}
+.supervisor {
+  border-top: 4px solid var(--Cyan);
+}
+.karma {
+  border-top: 4px solid var(--Orange);
+}
+.calculator {
+  border-top: 4px solid var(--Blue);
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(172, 172, 172);
+  color: var(--white);
+  padding: 0.5em;
+  margin-bottom: 0;
+}
+footer a {
+  color: gray;
+}
